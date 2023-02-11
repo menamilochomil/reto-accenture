@@ -1,5 +1,5 @@
 import  Header  from "./Header";
-import Navbar  from "./Navbar";
+// import Navbar  from "./Navbar";
 import Content  from "./Content";
 
 const MainView= () => {
