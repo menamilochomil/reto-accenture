@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
 // import {
 //   Routes,
 //   Route
@@ -9,11 +9,13 @@ import MainView from "./components/MainView";
 
 function App() {
   return (
-    <MainView/>
-    // <Routes className="App">
-    //   <Route path="/" element={<Layout />}/>
-    //   <Route path="/" element={<MainView />} />
-    // </Routes>
+    <main className='app-container'>
+      <MainView />
+      {/* <Routes className="App">
+     <Route path="/" element={<Layout />}/>
+    <Route path="/" element={<MainView />} />
+    </Routes> */}
+    </main>
   );
 }
 
