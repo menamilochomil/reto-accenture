@@ -1,0 +1,16 @@
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan{
+    grid-column: span 3;
+    grid-row: span 1;
+   
+}
+
+.main-title{
+    grid-column: span 3;
+    grid-row: span 2;
+}

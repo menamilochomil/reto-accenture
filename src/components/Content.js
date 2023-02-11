@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import '../style/Content.css';
 // import Ima from "./Ima"
 
 // import { fetchGet } from "../services/api"
@@ -34,7 +35,7 @@ const Content = () =>{
         return []
     } else {
         return (
-            <>
+            <section >
             {/* <Ima/> */}
                {data.map( (result) => 
                     <div   className='content  content-div'  key= {result.id}>
@@ -47,7 +48,7 @@ const Content = () =>{
                 </div>
      
                )} 
-            </>
+            </section>
         )
     }
 }

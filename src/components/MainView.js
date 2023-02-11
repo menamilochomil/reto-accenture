@@ -1,10 +1,11 @@
 import  Header  from "./Header";
 // import Navbar  from "./Navbar";
 import Content  from "./Content";
+import '../style/grid.css';
 
 const MainView= () => {
   return (
-    <div>
+    <div className="grid">
       <Header/>
       {/* <Navbar/> */}
       <Content/>

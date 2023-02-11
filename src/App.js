@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './style/App.css';
+
 // import {
 //   Routes,
 //   Route
@@ -9,7 +9,7 @@ import MainView from "./components/MainView";
 
 function App() {
   return (
-    <main className='app-container'>
+    <main>
       <MainView />
       {/* <Routes className="App">
      <Route path="/" element={<Layout />}/>
