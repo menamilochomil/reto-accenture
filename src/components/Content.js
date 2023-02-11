@@ -18,18 +18,23 @@ const Content = () => {
             .then((response) => response.json())
             .then((json) => setData(json));
     }
+    /*
+    I pretended to connect with a click on the div image the images with the Post component
+        const handleClick =() =>{
+            setShow(true)
+        }
+        onClick={()=>handleClick()}
+    
 
-    const handleClick =() =>{
-        setShow(true)
-    }
-
-    //   const showImages = () => {
-    //     fetch("https://api.unsplash.com/photos/?client_id=kyUcvjOklQmr7ybRsFAZ1wWsrGNpWyLRbTMhpPhRMF8")
-    //   .then((resp) => resp.json())
-    //   .then((images) => {
-    //     setImage(images);
-    //   })
-    // }
+    In this part I got the random images but I couldn't connect with the main data json
+         const showImages = () => {
+            fetch("https://api.unsplash.com/photos/?client_id=kyUcvjOklQmr7ybRsFAZ1wWsrGNpWyLRbTMhpPhRMF8")
+           .then((resp) => resp.json())
+           .then((images) => {
+            setImage(images);
+          })
+        }
+        */
 
     useEffect(() => {
         showData()
@@ -44,7 +49,7 @@ const Content = () => {
             <section className='container-content'>
                 {/* <Ima/> */}
                 {data.map((result) =>
-                    <div className='content  content-div' key={result.id} {/*onClick={()=>handleClick()}*/}>
+                    <div className='content  content-div' key={result.id}>
                         {/* <img  className='content  content-img' width={700}  height={700} src="https://source.unsplash.com/random"/> */}
                         {/* <>{image.map((x) => {
                         <img width={500} src={x.links.download} />
