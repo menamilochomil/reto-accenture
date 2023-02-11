@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react"
+import Ima from "./Ima"
+
 // import { fetchGet } from "../services/api"
 
 const Content = () =>{
 
     const [data, setData] = useState([])
-
+    const [image, setImage] = useState([])
     const url = 'https://jsonplaceholder.typicode.com/'
 
     //Getting data from api
@@ -15,7 +17,9 @@ const Content = () =>{
       }  
 
     //   const showImages = () => {
-    //      fetch("https://source.unsplash.com/random").then((res) => console.log(res.json()));
+    //     fetch("https://source.unsplash.com/random")
+    //     .then((response) => response.json())
+    //     .then((json) => setImage(json.message));
     //   }
 
     //   showImages()
@@ -27,6 +31,7 @@ const Content = () =>{
 
     return (
         <>
+        <Ima/>
            {data.map( (result) => 
                 <div  key= {result.id}>
                 <h3>Title: {result.title}</h3>
