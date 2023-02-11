@@ -35,16 +35,16 @@ const Content = () =>{
         return []
     } else {
         return (
-            <section >
+            <section className='container-content'>
             {/* <Ima/> */}
                {data.map( (result) => 
                     <div   className='content  content-div'  key= {result.id}>
-                    <img  className='content  content-img' width={700}  height={700} src="https://source.unsplash.com/random"/>
+                    {/* <img  className='content  content-img' width={700}  height={700} src="https://source.unsplash.com/random"/> */}
                     {/* <>{image.map((x) => {
                         <img width={500} src={x.links.download} />
                     })}</> */}
-                    <h3 className='content  content-title' >Title: {result.title}</h3>
-                    <p className='content  content-body' >Body: {result.body}</p>
+                    <h3 className='content  content-title' >{result.title}</h3>
+                    <p className='content  content-body' >{result.body}</p>
                 </div>
      
                )} 

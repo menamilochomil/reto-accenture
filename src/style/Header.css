@@ -1,16 +1,17 @@
 .container-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 10% 10%;
+        background-color: #FFFFFF;
+        text-align: center;
 }
 
 .slogan{
-    grid-column: span 3;
     grid-row: span 1;
-   
 }
 
 .main-title{
-    grid-column: span 3;
+    font-size: 2rem;
     grid-row: span 2;
+    height: .5rem;
 }

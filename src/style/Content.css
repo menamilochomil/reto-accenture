@@ -1,0 +1,29 @@
+.container-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    text-align: center;
+    color: aliceblue;
+}
+
+.content-div{
+    height: 40rem;
+    background-image: url('https://source.unsplash.com/random');
+    text-align: justify;
+    text-overflow: initial;
+}
+
+.content-title{
+    font-size: 1.5rem;
+    width: 70%;
+    height: 10%;
+}
+
+.content-body{
+    width: 70%;
+    height: 50%;
+}
+
+.content-title:first-letter, .content-body:first-letter{
+    text-transform: uppercase;
+}
